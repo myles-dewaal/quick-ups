@@ -1,7 +1,6 @@
 import React from 'react';
-import Navbarhome from '../components/Navbarhome';
-import Searchjumbo from '../components/Jumbotronhome';
-import Jumbotronhome from '../components/Jumbotronhome';
+import Navbarhome from '../../components/Navbarhome';
+import Jumbotronhome from '../../components/Jumbotronhome';
 
 const Search = () => {
     return (
