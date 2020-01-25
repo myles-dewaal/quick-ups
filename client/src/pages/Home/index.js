@@ -5,7 +5,6 @@ import Jumbotronhome from '../../components/Jumbotronhome';
 const Search = () => {
     return (
         <div>
-            <Navbarhome />
             <Jumbotronhome />
         </div>
     )
