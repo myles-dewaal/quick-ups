@@ -8,8 +8,10 @@ const Jumbotronhome = () => {
         <div>
             <div class="jumbotron jumbotron-fluid text-center">
                     <Navbarhome />
-                    <h1 class="display-4">QuickUps</h1>
-                    <p>Quickup's headline goes here</p>
+                    <div id="jumbotext">
+                    <h1 class="display-4">BIG pickups, quickly.</h1>
+                    <p>Fridges, washers, dryers, dishwashers, etc. Peer to peer pick up and delivery service.</p>
+                    </div>
             </div>
         </div>
     )
