@@ -1,13 +1,21 @@
 import React from 'react';
-import Navbarhome from '../../components/Navbarhome';
+import "./style.css";
 import Jumbotronhome from '../../components/Jumbotronhome';
+import Gettingstarted from '../../components/Gettingstarted';
+import Truckhome from '../../components/Truckhome';
+import Reviews from '../../components/Reviews';
+import Footer from '../../components/Footer';
 
-const Search = () => {
+
+const Home = () => {
     return (
-        <div>
-            <Navbarhome />
+        <div id='home'>
             <Jumbotronhome />
+            <Gettingstarted />
+            <Truckhome />
+            <Reviews />
+            <Footer />
         </div>
     )
 }
-export default Search;
+export default Home;
