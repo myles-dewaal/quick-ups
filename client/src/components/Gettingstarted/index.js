@@ -25,7 +25,7 @@ const Gettingstarted = () => {
                         </div>
                     </div>
                     <div className="col-md-4 mb-4">
-                        <i className="fa fa-usd fa-5x d-inline"></i>
+                        <i className="fa fa-archive fa-5x d-inline"></i>
                         <div className="d-inline">
                             <h2>Post a job</h2>
                             <p>Post items to be picked up and delivered.</p>
