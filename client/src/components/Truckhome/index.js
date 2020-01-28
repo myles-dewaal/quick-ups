@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+//import "./style.css";
 
 const Truckhome = () => {
     return (
@@ -7,7 +7,7 @@ const Truckhome = () => {
             <div className="makemoney">
                 <div className='container'>
                     <div className='row'>
-                    <i className="fa fa-usd fa-3x d-inline"></i>
+                    <i className="fa fa-usd fa-3x d-inline dollaricon"></i>
                     <h3 className="d-inline sevenfifty ml-2">Make $750 Guaranteed</h3>
                     </div>
                 </div>
@@ -15,7 +15,7 @@ const Truckhome = () => {
             <div className='container'>
                 <div className='row'>
                     <h2 className='trucktitle col-md-12'>
-                        BIG time <h2 className='benefits d-inline'>benefits</h2>
+                        Have a pickup truck? BIG time <h2 className='benefits d-inline'>benefits</h2>
                         <div className='v1'></div>
                     </h2>
                     <div className='col-md-6'>
