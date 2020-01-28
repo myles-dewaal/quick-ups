@@ -8,6 +8,7 @@ const LogInForm = () => {
                 <div className="card-body">
                     <h1>Log in to your account</h1>
                     <hr></hr>
+ 
                     <form>
                         <div className="form-group">
                             <label for="exampleInputEmail1">Email</label>
