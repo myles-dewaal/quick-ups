@@ -1,30 +1,48 @@
-import React from 'react';
+import React, {Component} from 'react';
 import "./style.css"
 
-const LogInForm = () => {
-    return (
-        <div className="container">
-            <div className="card">
-                <div className="card-body">
-                    <h1>Log in to your account</h1>
-                    <hr></hr>
- 
-                    <form>
-                        <div className="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@example.com"></input>
-                        </div>
-                        <div className="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"></input>
-                        </div>
-                        <button type="submit" className="btn btn-primary">Sign In</button>
-                        <small id="emailHelp" className="form-text text-muted">Don't have an accout? <a href="/">Sign up here</a></small>
+class LogInForm extends Component {
 
-                    </form>
-                </div>
-            </div>
+    state = {
+        results: []
+    };
+    handleFormSubmit = event => {
+        event.preventDefault();
+        let data = {
+            email: this.state.email,
+            password: this.state.password,
+          
+        };
+    };
+    handleInputChange = event => {
+        const name = event.target.name;
+        const value = event.target.value;
+        this.setState({
+            [name]: value
+        });
+    };
+    render () {
+        return(
+            <div>
+            <form>
+                <div className="container">
+                    <h4>Log In</h4>
+                    <hr></hr>
+                    <br />
+                    <div className="form-group">
+                        <input onChange={this.handleInputChange} type="text" name="email" className="form-control" id="email" placeholder="Email" />
+                    </div>
+                    <div className="form-group">
+                        <input onChange={this.handleInputChange} type="text" name="password" className="form-control" id="password" placeholder="Password" />
+                    </div>
+                        
+                    <div className="col">
+                        <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary mb-2">Submit</button>
+                    </div>
+                    </div>
+            </form>
         </div>
     )
+}
 }
 export default LogInForm;
