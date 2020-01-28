@@ -2,6 +2,7 @@ import React from 'react';
 import LogInForm from '../../components/LogInForm';
 import Navbarhome from '../../components/Navbarhome';
 import Footer from '../../components/Footer';
+import NavbarProfile from '../../components/NavbarProfile';
 
 
 const Login = () => {
