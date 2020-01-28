@@ -9,8 +9,8 @@ const Navbarhome = () => {
                 <a className="navbar-brand" href="/"><img src="./images/truck.png" alt="logo"/></a>
                 <ul className="nav navbar-nav flex-row float-left">
                     <li className="nav-item"><a className="nav-link pr-3 active" href="/">Home</a></li>
-                    <li className="nav-item"><a className="nav-link pr-3 active" href="saved">Create Account</a></li>
-                    <li className="nav-item"><a className="nav-link pr-3 active" href="saved">Login</a></li>
+                    <li className="nav-item"><a className="nav-link pr-3 active" href="/create">Create Account</a></li>
+                    <li className="nav-item"><a className="nav-link pr-3 active" href="/login">Login</a></li>
                 </ul>
                 </div>
             </nav>
