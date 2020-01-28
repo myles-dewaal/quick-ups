@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+//import "./style.css";
 
 
 const Gettingstarted = () => {
@@ -18,21 +18,21 @@ const Gettingstarted = () => {
             <div className="container text-center">
                 <div className="row">
                     <div className="col-md-4 mb-4">
-                        <i className="fa fa-id-card-o fa-5x d-inline"></i>
+                        <i className="fa fa-id-card-o fa-5x d-inline signupicon"></i>
                         <div className="d-inline">
                             <h2>Sign up</h2>
                             <p>Quick, free, and secure.</p>
                         </div>
                     </div>
                     <div className="col-md-4 mb-4">
-                        <i className="fa fa-archive fa-5x d-inline"></i>
+                        <i className="fa fa-archive fa-5x d-inline boxicon"></i>
                         <div className="d-inline">
                             <h2>Post a job</h2>
                             <p>Post items to be picked up and delivered.</p>
                         </div>
                     </div>
                     <div className="col-md-4 mb-4">
-                        <i className="fa fa-truck fa-5x d-inline"></i>
+                        <i className="fa fa-truck fa-5x d-inline truckicon"></i>
                         <div className="d-inline">
                             <h2>Delivery!</h2>
                             <p>It's that easy.</p>
