@@ -1,12 +1,25 @@
 import React, { Component } from "react";
 class Postpickups extends Component {
-
     state = {
         results: []
       };
     
       handleFormSubmit = event => {
+        let data = {
+            storeName: this.state.storeName,
+            pickUpAddress: this.state.pickUpAddress,
+            pickUpCity: this.state.pickUpCity,
+            pickUpState: this.state.pickUpState,
+            pickUpZip: this.state.pickUpZip,
+            userName: this.state.userName,
+            dropOffAddress: this.state.dropOffAddress,
+            dropOffCity: this.state.dropOffCity,
+            dropOffState: this.state.dropOffState,
+            dropOffZip: this.state.dropOffZip,
+            payOut: this.state.payOut,
+        };
         event.preventDefault();
+        console.log(data);
       };
     
       handleInputChange = event =>{
@@ -16,6 +29,7 @@ class Postpickups extends Component {
           [name]: value
         });
       };
+      
 
     render() {
         return (
