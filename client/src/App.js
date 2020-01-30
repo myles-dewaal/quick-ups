@@ -7,6 +7,7 @@ import NewAcct from "./pages/NewAcct";
 import Profile from "./pages/Profile";
 import Postpickups from "./pages/Postpickups";
 
+
 class App extends Component {
   render() {
     return (
