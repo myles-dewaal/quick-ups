@@ -15,6 +15,15 @@ import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import SpinnerComponent from "./pages/Home";
 
+<<<<<<< HEAD
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+      <div>
+        
+=======
 function App() {
   return (
     <div className="App">
@@ -28,6 +37,7 @@ function App() {
           <Reviews />
           <Footer />
         </header>
+>>>>>>> developmenttwo
         <Switch>
           <Route path="/" exact />
           <PrivateRoute path="/profile" component={Profile} />
