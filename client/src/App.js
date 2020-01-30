@@ -13,10 +13,12 @@ import Gettingstarted from "./components/Gettingstarted";
 import Truckhome from "./components/Truckhome";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
+import SpinnerComponent from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
+      <SpinnerComponent />
       {/* Don't forget to include the history module */}
       <Router history={history}>
         <header>
