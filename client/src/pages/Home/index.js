@@ -5,6 +5,7 @@ import Gettingstarted from '../../components/Gettingstarted';
 import Truckhome from '../../components/Truckhome';
 import Reviews from '../../components/Reviews';
 import Footer from '../../components/Footer';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 const Home = () => {
