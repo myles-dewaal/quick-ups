@@ -1,24 +1,224 @@
-.App {
+/*-------- Navbarhome ----------*/
+
+#navbarhomescreen{
+  position: relative;
+  bottom: 50px;
+}
+
+#navbarlogo {
+  width: 100px;
+}
+
+.navbutton:hover {
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#navbarlogo:hover{
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+/*-------- Jumbotronhome ----------*/
+#homejumbo{
+  height: 100vh;
+  background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(21, 21, 21, 0.9)), url('https://cdntdreditorials.azureedge.net/cache/f/a/4/1/8/d/fa418da0f9291759fadfd7880dc85062644896f3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Oswald', sans-serif;
+  color: #FCFFFC;
+  border-bottom: 4px solid #2ba84a;
+  border-top: 4px solid #2ba84a;
+  margin-bottom: 0;
+}
+
+#jumbotext{
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-------- Gettingstarted ----------*/
+.GStitle{
   text-align: center;
+  color: #040f0f;
+  padding: 50px;
+  border-top: 2px solid #2ba84a;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.why{
+  text-align: center;
+  color: #040f0f;
+  padding: 30px;
+}
+.gettingstarted{
+  background-color:#e9ecef;
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.signupicon {
+  color:#248232;
+}
+
+.boxicon {
+  color:#248232;
+}
+
+.truckicon {
+  color:#248232;
+}
+
+.whatis{
+  font-size: 20px;
+}
+/*-------- Truckhome ----------*/
+.dollaricon{
+  color:white;
+}
+.makemoney{
+  background-color: #2ba84a;
+  padding: 25px;
+}
+
+.sevenfifty{
   color: white;
+  font-size: 20px;
+  position: relative;
+  top:10px;
+}
+.trucktitle{
+  text-align: center !important;
+  margin-top: 35px;
 }
 
-.App-intro {
-  font-size: large;
+.benefits{
+  font-weight: bold;
+  color: #248232;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.greenappliances{
+  height: 408px;
+  width: 360px;
+  margin: auto;
+}
+
+.joincontainer{
+  text-align: center;
+
+}
+
+.join{
+  font-weight: bold;
+}
+
+.joing{
+  font-weight: bold;
+  color: #248232;
+}
+
+.driverinfo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.lighticons{
+  color: #56a96b;
+  display: inline;
+}
+
+.perks{
+  padding:0px;
+  margin: 0px;
+}
+
+.v1{
+  border-left: 4px solid #e9ecef;;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 75px;
+}
+/*-------- Reviews ----------*/
+.reviewscontainer{
+  background-color: #e9ecef;
+}
+.reviewcard {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  margin-top: 30px;
+  height: 170px;
+  border: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 27%, rgba(233,236,239,1) 98%);
+}
+.commenticon{
+  position: relative;
+  bottom: 15px;
+  right: -33px;
+  color: #248232;
+}
+.name{
+  font-size: 30px;
+  position: relative;
+  margin-left: 35px;
+  bottom: 20px;
+  right: -33px;
+}
+
+.starscontainer{
+  font-size: 20px;
+  position: relative;
+  margin-left: 35px;
+  bottom: 22px;
+  right: -33px;
+  color: #2ba84a;
+}
+
+.driverimage{
+  height: 230px;
+  width: 230px;
+  margin: auto;opacity: 0.85;
+}
+
+.drivercard{
+  width: 250px !important;
+  padding-top: 50px;
+  border: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 27%, rgba(233,236,239,1) 98%);
+}
+
+.drivercardgroup{
+  margin-bottom: 50px;
+}
+
+/*-------- Footer ----------*/
+.copyright {
+  height: 40px;
+  text-align: center;
+  background-color: #248232;
+  color: white;
+  font-size: 18px;
+}
+.footertext{
+   position: relative;
+   bottom: -5px;
+}
+
+.interested{
+   height: 200px;
+   background-color: #2ba84a;
 }
