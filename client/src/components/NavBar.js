@@ -26,6 +26,18 @@ const NavBar = () => {
                       </span>
                     )}
 
+                    {isAuthenticated &&(
+                      <span>
+                        <Link to="/jobs"><li className="nav-item navbutton mr-3">Claim a Job</li></Link>
+                      </span>
+                    )}
+
+                    {isAuthenticated &&(
+                      <span>
+                        <Link to="/postpickups"><li className="nav-item navbutton mr-3">Current Jobs</li></Link>
+                      </span>
+                    )}
+
                     <li className="nav-item navbutton">
                       {isAuthenticated && <button className="logoutbutton" onClick={() => logout()}>Log out</button>}
                     </li>
