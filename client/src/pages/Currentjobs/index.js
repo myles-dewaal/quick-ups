@@ -7,9 +7,7 @@ import CreateAcct from '../../components/CreateAcct';
 const Profile = () => {
     return (
         <div>
-            <NavbarProfile />
-            <Jumbotronhome />
-            <CreateAcct />
+            YOUR current jobs here
         </div>
     )
 }
