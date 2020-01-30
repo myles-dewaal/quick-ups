@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const mysql = require("mysql");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -10,6 +11,21 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+//MYSQL Connection
+const connection = mysql.createConnection({
+  port: "3306",
+  host: "localhost",
+  user: "root",
+  password: "KnightFire92!",
+  database: "quick_ups_db"
+});
+
+connection.connect(function(err) {
+  (err)? console.log(err): console.log(connection);
+});
+
+require("./routes/html-routes")(app);
 
 // Define API routes here
 
