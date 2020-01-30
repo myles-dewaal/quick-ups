@@ -10,6 +10,11 @@ import { useAuth0 } from "./react-auth0-spa";
 import Profile from "./components/Profile";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
+import Jumbotronhome from "./components/Jumbotronhome";
+import Gettingstarted from "./components/Gettingstarted";
+import Truckhome from "./components/Truckhome";
+import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +22,11 @@ function App() {
       {/* Don't forget to include the history module */}
       <Router history={history}>
         <header>
-          <NavBar />
+          <Jumbotronhome />
+          <Gettingstarted />
+          <Truckhome />
+          <Reviews />
+          <Footer />
         </header>
         <Switch>
           <Route path="/" exact />
