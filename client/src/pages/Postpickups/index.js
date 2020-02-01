@@ -21,7 +21,7 @@ class Postpickups extends Component {
         };
         event.preventDefault();
         console.log(tempData);
-        fetch('/postPickUp', {
+        fetch ('/postPickUp', {
             method: 'POST',
             data: {
                 tempData
