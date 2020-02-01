@@ -1,3 +1,12 @@
+/*-------- Global ----------*/
+.emptydiv{
+  margin-bottom: 70px;
+}
+
+.App{
+  font-family: 'Oswald', sans-serif;
+}
+
 /*-------- Navbarhome ----------*/
 
 #navbarhomescreen{
@@ -5,8 +14,32 @@
   bottom: 50px;
 }
 
+.navigationlinks{
+  color:white;
+  text-decoration: none;
+}
+
+.navigationlinks:hover{
+  color:white;
+  text-decoration: none;
+}
+
 #navbarlogo {
   width: 100px;
+}
+
+.loginbutton{
+  background-color: transparent;
+  border-color: white;
+  box-shadow: none;
+  color:white;
+}
+
+.logoutbutton{
+  background-color: transparent;
+  border-color: white;
+  box-shadow: none;
+  color:white;
 }
 
 .navbutton:hover {
@@ -224,6 +257,7 @@
 }
 
 /*-------- Post Pickup ----------*/
-.emptydiv{
-  margin-bottom: 50px;
-}
+
+/*-------- Available Jobs ----------*/
+
+/*-------- Current Jobs ----------*/
