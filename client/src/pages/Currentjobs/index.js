@@ -1,13 +1,12 @@
 import React from 'react';
-import NavbarProfile from '../../components/NavbarProfile';
-import Searchjumbo from '../../components/Jumbotronhome';
-import Jumbotronhome from '../../components/Jumbotronhome';
-import CreateAcct from '../../components/CreateAcct';
+import Navbar from "../../components/NavBar";
 
 const Profile = () => {
     return (
         <div>
-            YOUR current jobs here
+            <div className="emptydiv"></div>
+            <Navbar />
+            <p>YOUR current jobs here</p>
         </div>
     )
 }

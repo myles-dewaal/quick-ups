@@ -1,22 +1,8 @@
 import React from 'react';
-import "./style.css";
-​
+
 const Jobs = () => {
     return (
         <div>
-            <nav className="navbar navbar-dark bg-dark">
-                <div className="container">
-                    <a className="navbar-brand" href="/">
-                        <img src="/images/quick-ups.png" alt=""></img>
-                    </a>
-                    <ul className="nav navbar-nav flex-row float-left">
-                        <li className="nav-item"><a className="nav-link pr-4 active" href="/">Home</a></li>
-                        <li className="nav-item"><a className="nav-link pr-4" href="saved">Inventory</a></li>
-                        <li className="nav-item"><a className="nav-link pr-4" href="saved">Sign Out</a></li>
-                    </ul>
-                </div>
-            </nav>
-​
             <div class="jumbotron jumbotron-fluid text-center">
                 <div class="container">
                     <h1 class="display-4">Claims Available</h1>

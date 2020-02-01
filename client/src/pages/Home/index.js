@@ -1,5 +1,4 @@
 import React from 'react';
-import "./style.css";
 import Jumbotronhome from '../../components/Jumbotronhome';
 import Gettingstarted from '../../components/Gettingstarted';
 import Truckhome from '../../components/Truckhome';
@@ -34,11 +33,11 @@ class SpinnerComponent extends React.Component {
             color={"#123abc"}
             loading={this.state.loading}
           />
-          {/* <Jumbotronhome />
+            <Jumbotronhome />
             <Gettingstarted />
             <Truckhome />
             <Reviews />
-            <Footer /> */}
+            <Footer />
 
         </div>
 

@@ -34,7 +34,7 @@ const NavBar = () => {
 
                     {isAuthenticated &&(
                       <span>
-                        <Link to="/postpickups"><li className="nav-item navbutton mr-3">Current Jobs</li></Link>
+                        <Link to="/currentjobs"><li className="nav-item navbutton mr-3">Current Jobs</li></Link>
                       </span>
                     )}
 
