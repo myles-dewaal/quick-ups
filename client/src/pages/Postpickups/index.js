@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "../../components/NavBar";
 class Postpickups extends Component {
     state = {
         results: []
@@ -34,6 +35,8 @@ class Postpickups extends Component {
     render() {
         return (
             <div>
+                <div className="emptydiv"></div>
+                <Navbar />
             <form>
                 <div className="container">
                     <div className="form-group">
