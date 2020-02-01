@@ -14,20 +14,10 @@ import Truckhome from "./components/Truckhome";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import SpinnerComponent from "./pages/Home";
-
-<<<<<<< HEAD
-
-class App extends Component {
-  render() {
-    return (
-      <Router>
-      <div>
-        
-=======
 function App() {
+
   return (
     <div className="App">
-      <SpinnerComponent />
       {/* Don't forget to include the history module */}
       <Router history={history}>
         <header>
@@ -36,8 +26,8 @@ function App() {
           <Truckhome />
           <Reviews />
           <Footer />
+          <SpinnerComponent />
         </header>
->>>>>>> developmenttwo
         <Switch>
           <Route path="/" exact />
           <PrivateRoute path="/profile" component={Profile} />
@@ -46,5 +36,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

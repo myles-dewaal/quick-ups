@@ -5,7 +5,7 @@ class Postpickups extends Component {
       };
     
       handleFormSubmit = event => {
-        let data = {
+        let tempData = {
             storeName: this.state.storeName,
             pickUpAddress: this.state.pickUpAddress,
             pickUpCity: this.state.pickUpCity,
@@ -20,6 +20,12 @@ class Postpickups extends Component {
         };
         event.preventDefault();
         console.log(data);
+        axios("/postPickUp", {
+            method: "POST",
+            data: {
+               tempData 
+            }
+        })
       };
     
       handleInputChange = event =>{

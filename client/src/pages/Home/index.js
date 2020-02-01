@@ -5,7 +5,7 @@ import Gettingstarted from '../../components/Gettingstarted';
 import Truckhome from '../../components/Truckhome';
 import Reviews from '../../components/Reviews';
 import Footer from '../../components/Footer';
-import ClipLoader from "react-spinners/ClipLoader";
+import ClipLoader from "react-spinners/PulseLoader";
 import { css } from "@emotion/core";
 const override = css`
   display: block;
@@ -16,23 +16,17 @@ const override = css`
 
 
 class SpinnerComponent extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        loading: true
-      };
-    }
    
     render() {
         
       return (
         <div className="sweet-loading">
           <ClipLoader
-            size={150}
+            size={20}
             css={override}
             //size={"150px"} this also works
-            color={"#123abc"}
-            loading={this.state.loading}
+            color={"#248232"}
+            loading={this.props.loading}
           />
           {/* <Jumbotronhome />
             <Gettingstarted />
