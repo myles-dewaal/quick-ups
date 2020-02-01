@@ -8,6 +8,7 @@ const Availablejobs = () => {
     return (
         <div id='jobs'>
           <div className="emptydiv"></div>
+          <div className='horizontalline'></div>
           <Navbar />
           <Jobs />
           <Footer />  
