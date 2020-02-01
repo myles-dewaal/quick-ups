@@ -1,4 +1,4 @@
-<p align="center"><img width="600" height="180" src="public/images/front-page.png" width="100%"/></p>
+<p align="center"><img width="600" height="180" src="./images/front-page.png" width="100%"/></p>
 ​
 ---
 ### What This Application Does
