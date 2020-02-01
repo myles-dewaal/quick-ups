@@ -17,15 +17,19 @@ const connection = mysql.createConnection({
   port: "3306",
   host: "localhost",
   user: "root",
-  password: "KnightFire92!",
-  database: "quick_ups_db"
+  password: "root",
+  // database: "quick_ups_db"
 });
 
-connection.connect(function(err) {
-  (err)? console.log(err): console.log(connection);
+connection.connect(function (err) {
+  (err) ? console.log(err) : console.log(connection);
+  connection.query("CREATE DATABASE mydb", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
 });
 
-require("./routes/html-routes")(app);
+require("./routes/apiRoutes")(app);
 
 // Define API routes here
 

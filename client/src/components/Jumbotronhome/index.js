@@ -1,7 +1,5 @@
 import React from 'react';
 import Navbar from '../NavBar'
-//import "./style.css";
-
 
 const Jumbotronhome = () => {
     return (
