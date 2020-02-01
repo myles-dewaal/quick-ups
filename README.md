@@ -1,6 +1,7 @@
-<p align="center"><img width="600" height="180" src="./images/front-page.png" width="100%"/></p>
+![quickUps](./images/front-page.png)
 ​
 ---
+
 ### What This Application Does
 Quick Ups is a peer-to-peer delivery system. 
 
