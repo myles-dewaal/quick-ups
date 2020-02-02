@@ -97,7 +97,7 @@ class Postpickups extends Component {
                         </div>
                         <div className="form-row">
                             <div className="col">
-                                <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary mb-2">Submit</button>
+                                <button onClick={this.handleFormSubmit} type="submit" className="btn btn-success mb-2">Submit</button>
                             </div>
                         </div>
                     </div>
