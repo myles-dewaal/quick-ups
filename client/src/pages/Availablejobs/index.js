@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import Jobs from '../../components/Jobs';
 import Navbar from "../../components/NavBar";
 
 
@@ -20,21 +19,21 @@ const Availablejobs = () => {
                 <div className="card-body">
                   <div className='container'>
                     <div className='row'>
-                      <p class="card-text col-md-12"><small class="text-muted">Items list: Fridge, couch, washer, dryer.</small></p>
-                      <ul class="list-group col-md-5 d-inline mb-3">
-                        <li class="list-group-item">Pick up address city: Taylorsville</li>
-                        <li class="list-group-item">Pick up address zipcode: 84129</li>
-                        <li class="list-group-item">Pick up flights of stairs: 2</li>
+                      <p className="card-text col-md-12"><small className="text-muted">Items list: Fridge, couch, washer, dryer.</small></p>
+                      <ul className="list-group col-md-5 d-inline mb-3">
+                        <li className="list-group-item">Pick up address city: Taylorsville</li>
+                        <li className="list-group-item">Pick up address zipcode: 84129</li>
+                        <li className="list-group-item">Pick up flights of stairs: 2</li>
                       </ul>
-                      <ul class="list-group col-md-5 d-inline mb-3">
-                        <li class="list-group-item">Delivery address city: West Jordan</li>
-                        <li class="list-group-item">Delivery address zip code: 84088</li>
-                        <li class="list-group-item">Delivery flights of stairs: 0</li>
+                      <ul className="list-group col-md-5 d-inline mb-3">
+                        <li className="list-group-item">Delivery address city: West Jordan</li>
+                        <li className="list-group-item">Delivery address zip code: 84088</li>
+                        <li className="list-group-item">Delivery flights of stairs: 0</li>
                       </ul>
                       <div className='col-md-2'>
-                        <h3>Payout: <span class="badge badge-secondary payoutbadge">$15</span></h3>
+                        <h3>Payout: <span className="badge badge-secondary payoutbadge">$15</span></h3>
                         <br />
-                        <button type="button" class="btn btn-primary btn-lg claimbutton">CLAIM JOB</button>
+                        <button type="button" className="btn btn-primary btn-lg claimbutton">CLAIM JOB</button>
                       </div>
                     </div>
                   </div>
@@ -47,21 +46,21 @@ const Availablejobs = () => {
                 <div className="card-body">
                   <div className='container'>
                     <div className='row'>
-                      <p class="card-text col-md-12"><small class="text-muted">Items list: Fridge, couch, washer, dryer.</small></p>
-                      <ul class="list-group col-md-5 d-inline mb-3">
-                        <li class="list-group-item">Pick up address city: Taylorsville</li>
-                        <li class="list-group-item">Pick up address zipcode: 84129</li>
-                        <li class="list-group-item">Pick up flights of stairs: 2</li>
+                      <p className="card-text col-md-12"><small className="text-muted">Items list: Fridge, couch, washer, dryer.</small></p>
+                      <ul className="list-group col-md-5 d-inline mb-3">
+                        <li className="list-group-item">Pick up address city: Taylorsville</li>
+                        <li className="list-group-item">Pick up address zipcode: 84129</li>
+                        <li className="list-group-item">Pick up flights of stairs: 2</li>
                       </ul>
-                      <ul class="list-group col-md-5 d-inline mb-3">
-                        <li class="list-group-item">Delivery address city: West Jordan</li>
-                        <li class="list-group-item">Delivery address zip code: 84088</li>
-                        <li class="list-group-item">Delivery flights of stairs: 0</li>
+                      <ul className="list-group col-md-5 d-inline mb-3">
+                        <li className="list-group-item">Delivery address city: West Jordan</li>
+                        <li className="list-group-item">Delivery address zip code: 84088</li>
+                        <li className="list-group-item">Delivery flights of stairs: 0</li>
                       </ul>
                       <div className='col-md-2'>
-                        <h3>Payout: <span class="badge badge-secondary payoutbadge">$15</span></h3>
+                        <h3>Payout: <span className="badge badge-secondary payoutbadge">$15</span></h3>
                         <br />
-                        <button type="button" class="btn btn-primary btn-lg claimbutton">CLAIM JOB</button>
+                        <button type="button" className="btn btn-primary btn-lg claimbutton">CLAIM JOB</button>
                       </div>
                     </div>
                   </div>
