@@ -39,7 +39,7 @@ const Gettingstarted = () => {
                 </div>
             </div>
             <div className="text-center">
-                <button type="button" class="btn btn-outline-dark btn-lg mt-2 mb-4"><a href="/jobs">Have a truck?</a></button>
+                <button type="button" className="btn btn-outline-dark btn-lg mt-2 mb-4 truckbutton"><a href="#truckcontainer" className="truckbutton">Have a truck?</a></button>
             </div>
         </div>
     )

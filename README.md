@@ -1,4 +1,4 @@
-![quickUps](./images/front-page.png)
+![quickUps](client/public/images/front-page.png)
 ​
 ---
 
@@ -10,17 +10,18 @@ Through Quick Ups people who do not own a truck or other large vehicle are able 
 ​
 ---
 ### How it Works
-Click here to go to [Quick Ups](), where you will need to log in access the features on the website. Once you are logged in you can choose to request a pick up, claim a job, and view your current jobs. 
+
+Click [here]() to go to Quick Ups, from here the user will be prompted to log in to access the features on the website. Once logged in the user can choose to request a pick up, claim a job, and view current jobs. 
 ​
 ---
 ### Technologies Used
 * HTML | CSS
-* MySQL
 * Heroku
-* [JQuery](https://jquery.com/)
+* JavaScript
+* Sequelize
 * [Bootstrap](https://getbootstrap.com/)
 * [React](https://reactjs.org/)
-* [Auth0]()
+* [Auth0](https://auth0.com/)
 
 ---
 ### © 2020 Built By
