@@ -53,6 +53,7 @@ class Postpickups extends Component {
                 <Navbar />
                 <form className="formscontainer">
                     <div className="container allforms">
+                    <h1 className="display-4" className="text-center mt-2 mb-4">POST A PICK UP</h1>
                         <div className="form-group">
                             <label for="formGroupExampleInput">Pick up address</label>
                             <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="storeName" placeholder="Store Name" />
