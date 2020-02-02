@@ -9,6 +9,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import SpinnerComponent from "./pages/Home";
 import Availablejobs from "./pages/Availablejobs";
 import Currentjobs from "./pages/Currentjobs";
+import Pagenotfound from "./pages/Pagenotfound";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <PrivateRoute path="/postpickups" component={Postpickups} />
           <PrivateRoute path="/jobs" component={Availablejobs} />
           <PrivateRoute path="/currentjobs" component={Currentjobs} />
+          <Route component={Pagenotfound} />
         </Switch>
       </Router>
     </div>
