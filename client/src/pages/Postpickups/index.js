@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import Navbar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 class Postpickups extends Component {
     state = {
         results: []
-      };
-    
-      handleFormSubmit = event => {
-        let data = {
+    };
+
+    handleFormSubmit = event => {
+        let tempData = {
             storeName: this.state.storeName,
             pickUpAddress: this.state.pickUpAddress,
             pickUpCity: this.state.pickUpCity,
@@ -19,75 +21,98 @@ class Postpickups extends Component {
             payOut: this.state.payOut,
         };
         event.preventDefault();
-        console.log(data);
-      };
-    
-      handleInputChange = event =>{
+        console.log(tempData);
+        fetch ('/postPickUp', {
+            method: 'POST',
+            data: {
+                tempData
+            }
+        })
+            .then(function (response) {
+                return response.json()
+            }).then(function (body) {
+                console.log(body);
+            });
+
+    };
+
+    handleInputChange = event => {
         const name = event.target.name;
         const value = event.target.value;
         this.setState({
-          [name]: value
+            [name]: value
         });
-      };
-      
+    };
+
 
     render() {
         return (
-            <div>
-            <form>
-                <div className="container">
-                    <div className="form-group">
-                        <label for="formGroupExampleInput">Pick up address</label>
-                        <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="storeName" placeholder="Store Name" />
-                    </div>
-                    <div className="form-group">
-                        <input onChange={this.handleInputChange} type="text" name="pickUpAddress" className="form-control" id="pickUpAddress" placeholder="Street Address" />
-                    </div>
-                    <div className="form-row">
-                        <div className="col">
-                            <input onChange={this.handleInputChange} type="text" name="pickUpCity" className="form-control" id="pickUpCity" placeholder="City" />
+            <div className="postpickupscontainer">
+                <div className="emptydiv"></div>
+                <div className='horizontalline'></div>
+                <Navbar />
+                <form className="formscontainer">
+                    <div className="container allforms">
+                    <h1 className="display-4" className="text-center mt-2 mb-4">POST A PICK UP</h1>
+                        <div className="form-group">
+                            <label for="formGroupExampleInput">Pick up address</label>
+                            <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="storeName" placeholder="Store Name" />
                         </div>
-                        <div className="col">
-                            <input onChange={this.handleInputChange} type="text" name="pickUpState" className="form-control" id="pickUpState" placeholder="State" />
+                        <div className="form-group">
+                            <input onChange={this.handleInputChange} type="text" name="pickUpAddress" className="form-control" id="pickUpAddress" placeholder="Street Address" />
                         </div>
-                        <div className="form-group mx-sm-3 mb-2">
-                            <input onChange={this.handleInputChange} type="text" name="pickUpZip" className="form-control" id="pickUpZip" placeholder="Zip Code" />
+                        <div className="form-row">
+                            <div className="col">
+                                <input onChange={this.handleInputChange} type="text" name="pickUpCity" className="form-control" id="pickUpCity" placeholder="City" />
+                            </div>
+                            <div className="col">
+                                <input onChange={this.handleInputChange} type="text" name="pickUpState" className="form-control" id="pickUpState" placeholder="State" />
+                            </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="pickUpZip" className="form-control" id="pickUpZip" placeholder="Zip Code" />
+                            </div>
+                        </div>
+                        <br />
+                        <hr></hr>
+                        <br />
+                        <div className="form-group">
+                            <label for="formGroupExampleInput">Drop off address</label>
+                            <input onChange={this.handleInputChange} type="text" name="userName" className="form-control" id="userName" placeholder="Your Name" />
+                        </div>
+                        <div className="form-group">
+                            <input onChange={this.handleInputChange} type="text" name="dropOffAddress" className="form-control" id="dropOffAddress" placeholder="Street Address" />
+                        </div>
+                        <div className="form-row">
+                            <div className="col">
+                                <input onChange={this.handleInputChange} type="text" name="dropOffCity" className="form-control" id="dropOffCity" placeholder="City" />
+                            </div>
+                            <div className="col">
+                                <input onChange={this.handleInputChange} type="text" name="dropOffState" className="form-control" id="dropOffState" placeholder="State" />
+                            </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="dropOffZip" className="form-control" id="dropOffZip" placeholder="Zip Code" />
+                            </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="payOut" className="form-control" id="payOut" placeholder="Pay Out (Minimum $15)" />
+                            </div>
+                        </div>
+                        <br />
+                        <hr></hr>
+                        <br />
+                        <div className="form-group">
+                            <label for="formGroupExampleInput">List of merchandise</label>
+                            <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="merchandise" placeholder="Refrigerator, Stove, Freezer" />
+                        </div>
+                        <div className="form-row">
+                            <div className="col">
+                                <button onClick={this.handleFormSubmit} type="submit" className="mb-2 postpickupsubmitbutton">Submit</button>
+                            </div>
                         </div>
                     </div>
-                    <br />
-                    <div className="form-group">
-                        <label for="formGroupExampleInput">Drop off address</label>
-                        <input onChange={this.handleInputChange} type="text" name="userName" className="form-control" id="userName" placeholder="Your Name" />
-                    </div>
-                    <div className="form-group">
-                        <input onChange={this.handleInputChange} type="text" name="dropOffAddress" className="form-control" id="dropOffAddress" placeholder="Street Address" />
-                    </div>
-                    <div className="form-row">
-                        <div className="col">
-                            <input onChange={this.handleInputChange} type="text" name="dropOffCity" className="form-control" id="dropOffCity" placeholder="City" />
-                        </div>
-                        <div className="col">
-                            <input onChange={this.handleInputChange} type="text" name="dropOffState" className="form-control" id="dropOffState" placeholder="State" />
-                        </div>
-                        <div className="form-group mx-sm-3 mb-2">
-                            <input onChange={this.handleInputChange} type="text" name="dropOffZip" className="form-control" id="dropOffZip" placeholder="Zip Code" />
-                        </div>
-                        <div className="form-group mx-sm-3 mb-2">
-                            <input onChange={this.handleInputChange} type="text" name="payOut" className="form-control" id="payOut" placeholder="Pay Out (Minimum $15)" />
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label for="formGroupExampleInput">List of merchandise</label>
-                        <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="merchandise" placeholder="Refrigerator, Stove, Freezer" />
-                    </div>
-                    <div className="form-row">
-                    <div className="col">
-                        <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary mb-2">Submit</button>
-                    </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    )}
+                </form>
+                <Footer />
+            </div>
+        )
+    }
 }
 export default Postpickups;

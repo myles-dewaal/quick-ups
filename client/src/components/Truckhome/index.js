@@ -1,9 +1,8 @@
 import React from 'react';
-//import "./style.css";
 
 const Truckhome = () => {
     return (
-        <div className='truckcontainer'>
+        <div id='truckcontainer'>
             <div className="makemoney">
                 <div className='container'>
                     <div className='row'>
