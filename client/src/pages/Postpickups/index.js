@@ -21,7 +21,8 @@ class Postpickups extends Component {
             dropOffState: this.state.dropOffState,
             dropOffZip: this.state.dropOffZip,
             dropOffFloor: this.state.dropOffFloor,
-            payOut: this.state.payOut
+            payOut: this.state.payOut,
+            phoneNumber: this.state.phoneNumber
         };
         event.preventDefault();
         console.log(tempData);
@@ -103,6 +104,9 @@ class Postpickups extends Component {
                             </div>
                             <div className="form-group mx-sm-3 mb-2">
                                 <input onChange={this.handleInputChange} type="text" name="payOut" className="form-control" id="payOut" placeholder="Pay Out (Minimum $15)" required/>
+                            </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="phoneNumber" className="form-control" id="phoneNumber" placeholder="Phone Number" required/>
                             </div>
                         </div>
                         <br />
