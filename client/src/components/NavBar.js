@@ -16,25 +16,25 @@ const NavBar = () => {
 
                     <li className="nav-item navbutton">
                     {!isAuthenticated && (
-                      <button onClick={() => loginWithRedirect({})}>Log in</button>
+                      <button className ='loginbutton' onClick={() => loginWithRedirect({})}>Log in</button>
                     )}
                     </li>
                     
                     {isAuthenticated &&(
                       <span>
-                        <Link to="/postpickups"><li className="nav-item navbutton mr-3">Post a Pickup</li></Link>
+                        <Link to="/postpickups"><li className="nav-item navbutton mr-3 navigationlinks">Post a Pick Up</li></Link>
                       </span>
                     )}
 
                     {isAuthenticated &&(
                       <span>
-                        <Link to="/jobs"><li className="nav-item navbutton mr-3">Claim a Job</li></Link>
+                        <Link to="/jobs"><li className="nav-item navbutton mr-3 navigationlinks">Claim a Job</li></Link>
                       </span>
                     )}
 
                     {isAuthenticated &&(
                       <span>
-                        <Link to="/currentjobs"><li className="nav-item navbutton mr-3">Current Jobs</li></Link>
+                        <Link to="/currentjobs"><li className="nav-item navbutton mr-3 navigationlinks">Current Jobs</li></Link>
                       </span>
                     )}
 

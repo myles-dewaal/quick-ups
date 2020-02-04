@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../../components/NavBar";
 import axios from "axios";
+import Footer from "../../components/Footer";
 class Postpickups extends Component {
     state = {
         results: []
@@ -47,11 +48,13 @@ class Postpickups extends Component {
 
     render() {
         return (
-            <div>
+            <div className="postpickupscontainer">
                 <div className="emptydiv"></div>
+                <div className='horizontalline'></div>
                 <Navbar />
-                <form>
-                    <div className="container">
+                <form className="formscontainer">
+                    <div className="container allforms">
+                    <h1 className="display-4" className="text-center mt-2 mb-4">POST A PICK UP</h1>
                         <div className="form-group">
                             <label for="formGroupExampleInput">Pick up address</label>
                             <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="storeName" placeholder="Store Name" required/>
@@ -70,6 +73,8 @@ class Postpickups extends Component {
                                 <input onChange={this.handleInputChange} type="text" name="pickUpZip" className="form-control" id="pickUpZip" placeholder="Zip Code" required/>
                             </div>
                         </div>
+                        <br />
+                        <hr></hr>
                         <br />
                         <div className="form-group">
                             <label for="formGroupExampleInput">Drop off address</label>
@@ -92,17 +97,21 @@ class Postpickups extends Component {
                                 <input onChange={this.handleInputChange} type="text" name="payOut" className="form-control" id="payOut" placeholder="Pay Out (Minimum $15)" required/>
                             </div>
                         </div>
+                        <br />
+                        <hr></hr>
+                        <br />
                         <div className="form-group">
                             <label for="formGroupExampleInput">List of merchandise</label>
                             <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="merchandise" placeholder="Refrigerator, Stove, Freezer" required/>
                         </div>
                         <div className="form-row">
                             <div className="col">
-                                <button onClick={this.handleFormSubmit} type="submit" className="btn btn-primary mb-2">Submit</button>
+                                <button onClick={this.handleFormSubmit} type="submit" className="mb-2 postpickupsubmitbutton">Submit</button>
                             </div>
                         </div>
                     </div>
                 </form>
+                <Footer />
             </div>
         )
     }
