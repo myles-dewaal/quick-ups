@@ -47,6 +47,10 @@ module.exports = function(sequelize, DataTypes) {
       payOut: {
         type: DataTypes.STRING,
         allowNull: false,
+      },
+      phoneNumber: {
+        type: DataTypes.STRING,
+        allowNull: false,
       }
     });
 
