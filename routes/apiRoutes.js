@@ -1,4 +1,5 @@
 // const mysql = require("mysql");
+var db = require("../modules");
 
 module.exports = function(app) {
     app.get('/', function(req, res) {
@@ -7,6 +8,13 @@ module.exports = function(app) {
   //      });
 
     });
+    app.post("/api/postQuickup", function(req, res) {
+      console.log(req.body.tempData);
+    db.postQuickup.create(req.body.tempData).then(function(dbpostQuickup) {
+      res.json(dbpostQuickup);
+
+    });
+  });
     
 
 };
