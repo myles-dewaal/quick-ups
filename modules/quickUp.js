@@ -16,6 +16,10 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      pickUpFloor: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       userName: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -33,6 +37,10 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
       },
       dropOffZip: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      dropOffFloor: {
         type: DataTypes.STRING,
         allowNull: false,
       },

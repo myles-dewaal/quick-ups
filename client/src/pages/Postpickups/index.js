@@ -14,12 +14,14 @@ class Postpickups extends Component {
             pickUpCity: this.state.pickUpCity,
             pickUpState: this.state.pickUpState,
             pickUpZip: this.state.pickUpZip,
+            pickUpFloor: this.state.pickUpFloor,
             userName: this.state.userName,
             dropOffAddress: this.state.dropOffAddress,
             dropOffCity: this.state.dropOffCity,
             dropOffState: this.state.dropOffState,
             dropOffZip: this.state.dropOffZip,
-            payOut: this.state.payOut,
+            dropOffFloor: this.state.dropOffFloor,
+            payOut: this.state.payOut
         };
         event.preventDefault();
         console.log(tempData);
@@ -72,6 +74,9 @@ class Postpickups extends Component {
                             <div className="form-group mx-sm-3 mb-2">
                                 <input onChange={this.handleInputChange} type="text" name="pickUpZip" className="form-control" id="pickUpZip" placeholder="Zip Code" required/>
                             </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="pickUpFloor" className="form-control" id="pickUpFloor" placeholder="Floor" required/>
+                            </div>
                         </div>
                         <br />
                         <hr></hr>
@@ -92,6 +97,9 @@ class Postpickups extends Component {
                             </div>
                             <div className="form-group mx-sm-3 mb-2">
                                 <input onChange={this.handleInputChange} type="text" name="dropOffZip" className="form-control" id="dropOffZip" placeholder="Zip Code" required/>
+                            </div>
+                            <div className="form-group mx-sm-3 mb-2">
+                                <input onChange={this.handleInputChange} type="text" name="dropOffFloor" className="form-control" id="dropOffFloor" placeholder="Floor" required/>
                             </div>
                             <div className="form-group mx-sm-3 mb-2">
                                 <input onChange={this.handleInputChange} type="text" name="payOut" className="form-control" id="payOut" placeholder="Pay Out (Minimum $15)" required/>
