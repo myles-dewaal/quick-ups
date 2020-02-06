@@ -22,7 +22,8 @@ class Postpickups extends Component {
             dropOffZip: this.state.dropOffZip,
             dropOffFloor: this.state.dropOffFloor,
             payOut: this.state.payOut,
-            phoneNumber: this.state.phoneNumber
+            phoneNumber: this.state.phoneNumber,
+            merchandise: this.state.merchandise
         };
         event.preventDefault();
         console.log(tempData);
@@ -114,7 +115,7 @@ class Postpickups extends Component {
                         <br />
                         <div className="form-group">
                             <label for="formGroupExampleInput">List of merchandise</label>
-                            <input onChange={this.handleInputChange} type="text" name="storeName" className="form-control" id="merchandise" placeholder="Refrigerator, Stove, Freezer" required/>
+                            <input onChange={this.handleInputChange} type="text" name="merchandise" className="form-control" id="merchandise" placeholder="Refrigerator, Stove, Freezer" required/>
                         </div>
                         <div className="form-row">
                             <div className="col">
