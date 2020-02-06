@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from "../../components/NavBar";
 
 
+
 const Availablejobs = () => {
     return (
         <div id='jobs'>

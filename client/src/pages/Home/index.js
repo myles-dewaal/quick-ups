@@ -21,25 +21,38 @@ class SpinnerComponent extends React.Component {
         loading: true
       };
     }
+
+    componentDidMount() {
+      this.timerHandle = setTimeout(() => this.setState({ loading: false }), 2000); 
+    }
+  
+    componentWillUnmount(){
+      if (this.timerHandle) {
+        clearTimeout(this.timerHandle);
+        this.timerHandle = 0;
+      }
+    }
    
     render() {
         
       return (
         
         <div className="sweet-loading">
+          <ClipLoader
+            size={20}
+            css={override}
+            size={"50px"} this also works
+            color={"#248232"}
+            margin={"10px"}
+            loading={this.state.loading}
+          />
+           
            <Jumbotronhome />
             <Gettingstarted />
             <Truckhome />
             <Reviews />
             <Footer />
-          <ClipLoader
-            size={20}
-            css={override}
-            //size={"150px"} this also works
-            color={"#248232"}
-            loading={this.state.loading}
-          />
-           
+          
 
         </div>
 
