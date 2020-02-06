@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Mern Demo",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3000/",
   "dependencies": {
     "express": "^4.17.1",
     "@auth0/auth0-spa-js": "^1.6.3",

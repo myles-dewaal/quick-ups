@@ -16,5 +16,10 @@ module.exports = function(app) {
     });
   });
     
+    app.get("/api/postQuickup", function(req, res) {
+      db.postQuickup.findAll().then(function(results){
+        res.json(results)
+      });
+    });
 
 };
