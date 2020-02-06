@@ -10,7 +10,7 @@ const Profile = () => {
             <Navbar />
             <div className='currentjobscontainer'>
                 <div className='container'>
-                    <h1 className="display-4" className="text-center mt-5 mb-4">YOUR CURRENT JOBS</h1>
+                    <h1 className="text-center mt-5 mb-4 display-4">YOUR CURRENT JOBS</h1>
                     <div className="card availablejobcard">
                         <div className="card-header darkcardheader">
                         OwnersEmailAddress@example.com

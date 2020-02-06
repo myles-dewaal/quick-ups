@@ -11,7 +11,7 @@ const Availablejobs = () => {
           <Navbar />
           <div className="availablejobscontainer">
             <div className='container'>
-            <h1 className="display-4" className="text-center mt-5 mb-4">CLAIM A JOB</h1>
+            <h1 className="text-center mt-5 mb-4 display-4">CLAIM A JOB</h1>
               <div className="card availablejobcard">
                 <div className="card-header darkcardheader">
                   OwnersEmailAddress@example.com

@@ -11,7 +11,7 @@ const Gettingstarted = () => {
                 </div>
             </div>    
             <div className="container">
-                <h1 className="display-4" className="GStitle">HOW IT WORKS</h1>
+                <h1 className="GStitle display-4">HOW IT WORKS</h1>
             </div>
             <div className="container text-center">
                 <div className="row">
